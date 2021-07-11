@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Minecraft-cpp", "Minecraft-cpp.vcxproj", "{26FE8CF5-D6EB-40C8-AB25-63BA26ECC1BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26FE8CF5-D6EB-40C8-AB25-63BA26ECC1BF}.Debug|x64.ActiveCfg = Debug|x64
+		{26FE8CF5-D6EB-40C8-AB25-63BA26ECC1BF}.Debug|x64.Build.0 = Debug|x64
+		{26FE8CF5-D6EB-40C8-AB25-63BA26ECC1BF}.Release|x64.ActiveCfg = Release|x64
+		{26FE8CF5-D6EB-40C8-AB25-63BA26ECC1BF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30FEF9D3-FD55-4BE6-BEFA-54B0ACE12A90}
+	EndGlobalSection
+EndGlobal
