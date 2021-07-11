@@ -71,21 +71,6 @@ Minecraft::Application::~Application()
 
 void Minecraft::Application::run()
 {
-	using Engine::gltk::Shader;
-
-	Shader shader;
-
-	try
-	{
-		shader.add(Shader::ShaderType::vertex, "shaders\\test\\vertex.glsl");
-		shader.add(Shader::ShaderType::fragment, "shaders\\test\\fragment.glsl");
-		shader.link();
-	}
-	catch (std::exception& e)
-	{
-		this->logger << Engine::Logger::message("OpenGL shader compiling error", e.what());
-	}
-
 	while (this->window->isOpen())
 	{
 		sf::Event event;
