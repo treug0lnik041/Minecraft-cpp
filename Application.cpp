@@ -18,7 +18,6 @@ void Minecraft::Application::OpenGL_init()
 	if (glewInit() != GLEW_OK)
 		throw std::exception("unable to initialize GLEW");
 
-
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_DEBUG_OUTPUT);
 	glEnable(GL_BLEND);
@@ -62,6 +61,8 @@ Minecraft::Application::Application()
 {
 	this->SFML_init(sf::VideoMode(1000, 600), "Minecraft-cpp");
 	this->OpenGL_init();
+	this->window->setVerticalSyncEnabled(false);
+	this->window->setActive();
 }
 
 Minecraft::Application::~Application()
@@ -71,6 +72,8 @@ Minecraft::Application::~Application()
 
 void Minecraft::Application::run()
 {
+	
+
 	while (this->window->isOpen())
 	{
 		sf::Event event;
@@ -87,9 +90,12 @@ void Minecraft::Application::run()
 		//Print log information
 		this->logger.flush();
 
+		//Draw things
 
+
+		//Update screen
+		this->window->display();
 		glClearColor(0.0, 0.0, 0.0, 1.0);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		this->window->display();
 	}
 }

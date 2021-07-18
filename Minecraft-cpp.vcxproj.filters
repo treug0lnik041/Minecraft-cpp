@@ -16,6 +16,9 @@
     <Filter Include="shaders">
       <UniqueIdentifier>{7686e3e1-c8c4-408a-8d51-c605e5ef68f5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="shaders\test">
+      <UniqueIdentifier>{1af77dc3-6f57-4a18-8412-16684b01cdb5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -28,6 +31,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Engine\GLTK\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GLTK\IndexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GLTK\VertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GLTK\VertexArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -50,5 +62,22 @@
     <ClInclude Include="Engine\GLTK\Shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Engine\GLTK\VertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GLTK\IndexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GLTK\VertexArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\test\vertex.glsl">
+      <Filter>shaders\test</Filter>
+    </None>
+    <None Include="shaders\test\fragment.glsl">
+      <Filter>shaders\test</Filter>
+    </None>
   </ItemGroup>
 </Project>

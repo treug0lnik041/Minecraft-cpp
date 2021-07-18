@@ -67,7 +67,7 @@ namespace Engine
 }
 
 template<>
-inline void Engine::gltk::Shader::uniform(std::string name, int data)
+inline void Engine::gltk::Shader::uniform<int>(std::string name, int data)
 {
 	Uniform u = this->findUniform(name);
 	if (u.type == GL_INT)
@@ -75,7 +75,7 @@ inline void Engine::gltk::Shader::uniform(std::string name, int data)
 }
 
 template<>
-inline void Engine::gltk::Shader::uniform(std::string name, float data)
+inline void Engine::gltk::Shader::uniform<float>(std::string name, float data)
 {
 	Uniform u = this->findUniform(name);
 	if (u.type == GL_FLOAT)
@@ -83,7 +83,7 @@ inline void Engine::gltk::Shader::uniform(std::string name, float data)
 }
 
 template<>
-inline void Engine::gltk::Shader::uniform(std::string name, glm::vec3 data)
+inline void Engine::gltk::Shader::uniform<glm::vec3>(std::string name, glm::vec3 data)
 {
 	Uniform u = this->findUniform(name);
 	if (u.type == GL_FLOAT_VEC3)
@@ -91,7 +91,7 @@ inline void Engine::gltk::Shader::uniform(std::string name, glm::vec3 data)
 }
 
 template<>
-inline void Engine::gltk::Shader::uniform(std::string name, glm::vec4 data)
+inline void Engine::gltk::Shader::uniform<glm::vec4>(std::string name, glm::vec4 data)
 {
 	Uniform u = this->findUniform(name);
 	if (u.type == GL_FLOAT_VEC4)
@@ -99,7 +99,7 @@ inline void Engine::gltk::Shader::uniform(std::string name, glm::vec4 data)
 }
 
 template<>
-inline void Engine::gltk::Shader::uniform(std::string name, glm::mat4 data)
+inline void Engine::gltk::Shader::uniform<glm::mat4>(std::string name, glm::mat4 data)
 {
 	Uniform u = this->findUniform(name);
 	if (u.type == GL_FLOAT_MAT4)

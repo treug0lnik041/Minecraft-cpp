@@ -8,6 +8,9 @@
 #endif
 
 #include "Engine/GLTK/Shader.h"
+#include "Engine/GLTK/VertexArray.h"
+#include "Engine/GLTK/VertexBuffer.h"
+#include "Engine/GLTK/IndexBuffer.h"
 
 namespace Minecraft
 {

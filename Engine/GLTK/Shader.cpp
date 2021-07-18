@@ -92,8 +92,6 @@ void Engine::gltk::Shader::add(ShaderType type, std::filesystem::path pathToFile
 
 void Engine::gltk::Shader::link()
 {
-	if (this->handler != -1) throw std::exception("shader program is already linked");
-
 	this->handler = glCreateProgram();
 	for (uint8_t i = 0; i < this->shaders[i] != 0; i++)
 		glAttachShader(this->handler, this->shaders[i]);
